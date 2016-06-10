@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+
+require 'gocd/monitor'
+require 'gocd/monitor/cli/api_support'
+require 'gocd/monitor/api_support'
+
+options = Gocd::Monitor::CLI::ApiSupport.new.parse(ARGV)
+Gocd::Monitor::ApiSupport.new(options).perform

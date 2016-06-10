@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+IFS=$'\n\t'
+HERE=$(cd "$(dirname $0)" > /dev/null && pwd)
+
+RUBY="${HERE}/jruby"
+
+"${RUBY}" -S gem install "${HERE}/../vendor/bundler/bundler-1.12.5.gem" --no-ri --no-rdoc --install-dir vendor/gems
+NOKOGIRI_USE_SYSTEM_LIBRARIES=1 "${RUBY}" -S bundle install --local --jobs 8 --clean --without 'test development'

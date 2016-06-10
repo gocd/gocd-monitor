@@ -1,0 +1,13 @@
+.idea/
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+/log/
+/out/
+/vendor/bin/
+/vendor/gems/

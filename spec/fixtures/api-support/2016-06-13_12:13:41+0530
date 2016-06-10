@@ -1,0 +1,15 @@
+{
+  "Timestamp": "2016-06-13T12:13:41+05:30",
+  "Thread Information": {
+    "Stack Trace": {
+      "951": {
+        "Id": 951,
+        "Stack Trace": [
+                  "sun.misc.Unsafe.park(Native Method)",
+                  "java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)",
+                  "java.lang.Thread.run(Thread.java:745)"
+                ]
+      }
+    }
+  }
+}
