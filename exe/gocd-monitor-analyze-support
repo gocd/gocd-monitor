@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+
+require 'gocd/monitor'
+require 'gocd/monitor/cli/analyze_support'
+require 'gocd/monitor/analyze_support'
+
+options = Gocd::Monitor::CLI::AnalyzeSupport.new.parse(ARGV)
+Gocd::Monitor::AnalyzeSupport.new(options).perform
