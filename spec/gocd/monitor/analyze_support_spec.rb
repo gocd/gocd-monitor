@@ -9,8 +9,8 @@ RSpec.describe Gocd::Monitor::AnalyzeSupport do
     renderer = double('renderer')
 
     options = {
-      api_support_hash: JSON.parse(File.read('spec/fixtures/api-support/2016-06-13_12:13:41+0530')),
-      api_support_hash_next: JSON.parse(File.read('spec/fixtures/api-support/2016-06-13_12:13:45+0530')),
+      api_support_hash: JSON.parse(File.read('spec/fixtures/api-support/2016-06-13_12-13-41+0530')),
+      api_support_hash_next: JSON.parse(File.read('spec/fixtures/api-support/2016-06-13_12-13-45+0530')),
       thread_id: '951'
     }
 
