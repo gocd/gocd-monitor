@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'nokogiri', '1.13.3' # indirect dependency needed by cfpropertylist
+  spec.add_dependency 'nokogiri', '1.13.4' # indirect dependency needed by cfpropertylist
   spec.add_dependency 'CFPropertyList', '2.2.8' # indirect dependency needed by facter
 
   spec.add_dependency 'faraday', '0.9.2'
