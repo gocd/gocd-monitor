@@ -22,13 +22,13 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'nokogiri', '1.16.5' # indirect dependency needed by cfpropertylist
-  spec.add_dependency 'CFPropertyList', '2.2.8' # indirect dependency needed by facter
+  spec.add_dependency 'nokogiri', '1.18.5' # indirect dependency needed by cfpropertylist
+  spec.add_dependency 'CFPropertyList', '3.0.7' # indirect dependency needed by facter
 
-  spec.add_dependency 'faraday', '0.9.2'
-  spec.add_dependency 'net-http-persistent', '2.9.4' # to allow keep alive/persistent http connections
-  spec.add_dependency 'facter', '2.4.6'
+  spec.add_dependency 'faraday', '2.12.2'
+  spec.add_dependency 'net-http-persistent', '4.0.5' # to allow keep alive/persistent http connections
+  spec.add_dependency 'facter', '4.10.0'
 
-  spec.add_development_dependency 'rake', '13.0.6'
-  spec.add_development_dependency 'rspec' , '3.4.0'
+  spec.add_development_dependency 'rake', '13.2.1'
+  spec.add_development_dependency 'rspec' , '3.13.0'
 end
