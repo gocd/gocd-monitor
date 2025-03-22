@@ -42,14 +42,10 @@ GEM
     rspec-support (3.4.1)
 
 PLATFORMS
-  java
+  universal-java-17
   ruby
 
 DEPENDENCIES
-  bundler (= 1.12.5)
   gocd-monitor!
   rake (= 13.0.6)
   rspec (= 3.4.0)
-
-BUNDLED WITH
-   1.12.5
