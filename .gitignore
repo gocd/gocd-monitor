@@ -11,3 +11,5 @@
 /out/
 /vendor/bin/
 /vendor/gems/
+/api-support/
+os-facts.json

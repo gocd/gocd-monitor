@@ -1,12 +1,13 @@
 PATH
   remote: .
   specs:
-    gocd-monitor (0.1.0)
-      CFPropertyList (= 3.0.7)
-      facter (= 4.10.0)
-      faraday (= 2.12.2)
-      net-http-persistent (= 4.0.5)
-      nokogiri (= 1.18.5)
+    gocd-monitor (0.2.0)
+      CFPropertyList (~> 3.0.7)
+      facter (~> 4.10.0)
+      faraday (~> 2.12.2)
+      faraday-net_http_persistent (~> 2.3)
+      net-http-persistent (~> 4.0.5)
+      nokogiri (~> 1.18.5)
 
 GEM
   remote: https://rubygems.org/
@@ -27,6 +28,9 @@ GEM
       logger
     faraday-net_http (3.4.0)
       net-http (>= 0.5.0)
+    faraday-net_http_persistent (2.3.0)
+      faraday (~> 2.5)
+      net-http-persistent (>= 4.0.4, < 5)
     hocon (1.4.0)
     json (2.10.2)
     json (2.10.2-java)
@@ -69,5 +73,8 @@ PLATFORMS
 
 DEPENDENCIES
   gocd-monitor!
-  rake (= 13.2.1)
-  rspec (= 3.13.0)
+  rake (~> 13.2.1)
+  rspec (~> 3.13.0)
+
+BUNDLED WITH
+   2.6.4

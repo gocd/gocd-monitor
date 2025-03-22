@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-HERE=$(cd "$(dirname $0)" > /dev/null && pwd)
-export PATH="${HERE}/../vendor/gems/bin:$PATH"
-GEM_HOME="${HERE}/../vendor/gems" GEM_PATH="${HERE}/../vendor/gems" exec java \
-    -XX:+TieredCompilation \
-    -XX:TieredStopAtLevel=1 \
-    -Djruby.compile.invokedynamic=false \
-    -Djruby.compile.mode=OFF \
-    -jar "${HERE}/../vendor/jruby-complete-9.1.2.0.jar" "$@"

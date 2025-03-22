@@ -1,4 +1,5 @@
 require 'json'
+require 'ostruct'
 
 module Gocd
   module Monitor
@@ -22,9 +23,6 @@ module Gocd
 
           blocked_threads = get_blocked_threads(api_support_hash)
           blocked_threads_next = get_blocked_threads(api_support_hash_next)
-
-          api_support_timestamp = api_support_hash['Timestamp']
-          api_support_timestamp_next = api_support_hash_next['Timestamp']
 
           blocked_threads.each do |thread_id, details|
             same_thread_in_next_snapshot = blocked_threads_next[thread_id]

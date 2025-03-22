@@ -1,5 +1,6 @@
 require 'logger'
 require 'faraday'
+require 'faraday/net_http_persistent'
 require 'uri'
 require 'facter'
 require 'json'
@@ -60,7 +61,9 @@ module Gocd
           conn = Faraday.new(url: url) do |conn|
             conn.adapter :net_http_persistent
           end
-          conn.basic_auth(options.username, options.password)
+          if options.username
+            conn.request :authorization, :basic, options.username, options.password
+          end
           conn
         end
       end
