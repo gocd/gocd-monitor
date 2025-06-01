@@ -1,15 +1,5 @@
 version: 2
 updates:
-  - package-ecosystem: bundler
-    directory: /
-    schedule:
-      interval: monthly
-    allow:
-      - dependency-type: all
-    groups:
-      ruby-deps:
-        patterns:
-          - "*"
   - package-ecosystem: github-actions
     directory: /
     schedule:
@@ -18,3 +8,12 @@ updates:
       github-actions:
         patterns:
           - "*"
+  - package-ecosystem: bundler
+    directory: /
+    schedule:
+      interval: monthly
+    allow:
+      - dependency-type: all
+    groups:
+      ruby-deps:
+        patterns: [ "*" ]
