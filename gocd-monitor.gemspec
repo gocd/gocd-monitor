@@ -30,6 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'faraday-net_http_persistent', '~> 2.3'
   spec.add_dependency 'facter', '~> 4.10.0'
 
-  spec.add_development_dependency 'rake', '~> 13.2.1'
+  spec.add_development_dependency 'rake', '~> 13.3.0'
   spec.add_development_dependency 'rspec' , '~> 3.13.0'
 end
