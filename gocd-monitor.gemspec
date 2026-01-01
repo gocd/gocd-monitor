@@ -22,8 +22,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'nokogiri', '~> 1.18.5' # indirect dependency needed by cfpropertylist
-  spec.add_dependency 'CFPropertyList', '~> 3.0.7' # indirect dependency needed by facter
+  spec.add_dependency 'nokogiri', '>= 1.18.5', '< 1.20.0' # indirect dependency needed by cfpropertylist
+  spec.add_dependency 'CFPropertyList', '>= 3.0.7', '< 4.1.0' # indirect dependency needed by facter
 
   spec.add_dependency 'faraday', '>=2.12.2', '<2.15.0'
   spec.add_dependency 'net-http-persistent', '~> 4.0.5' # to allow keep alive/persistent http connections
