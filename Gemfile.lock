@@ -32,7 +32,7 @@ GEM
       faraday (~> 2.5)
       net-http-persistent (>= 4.0.4, < 5)
     hocon (1.4.0)
-    json (2.18.1)
+    json (2.19.2)
     logger (1.7.0)
     mini_portile2 (2.8.9)
     net-http (0.9.1)
