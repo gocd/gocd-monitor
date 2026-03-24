@@ -1,5 +1,4 @@
 .idea/
-/.bundle/
 /.yardoc
 /_yardoc/
 /coverage/
@@ -13,3 +12,4 @@
 /vendor/gems/
 /api-support/
 os-facts.json
+.bundle/ruby/
