@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'nokogiri', '>= 1.18.5', '< 1.20.0' # indirect dependency needed by cfpropertylist
   spec.add_dependency 'CFPropertyList', '>= 3.0.7', '< 4.1.0' # indirect dependency needed by facter
 
-  spec.add_dependency 'faraday', '>=2.12.2', '<2.15.0'
+  spec.add_dependency 'faraday', '>=2.12.2', '<2.16.0'
   spec.add_dependency 'net-http-persistent', '~> 4.0.5' # to allow keep alive/persistent http connections
   spec.add_dependency 'faraday-net_http_persistent', '~> 2.3'
   spec.add_dependency 'facter', '~> 4.10.0'
